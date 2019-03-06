@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>LoginPage/MediCare.com</title>
+<link rel="shortcut icon" href="1.ico">
+<style>
+body  {
+    background-image: url("C:/Users/get it/Downloads/doc.jpg");
+}
+</style>
+</head>
+<body >
+<script>
+function func(){
+var a=document.getElementById("name").value;
+var b=document.getElementById("pwrd").value;
+if(("mateenraina"==a && "admin"==b))
+{
+window.open("project.html","_blank");
+}
+else
+alert("wrong username or password");
+}
+</script>
+<h1><marquee scrollamount="20">MediCare.com India Ki Apni Pharmacy</marquee></h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form align="center">
+<strong  style="color:red;">Username<strong>:&nbsp<input type="text" id="name" name="username" size="29.4" > 
+<br>
+<br>
+<strong style="color:red;">Password<strong>:&nbsp<input type="password" id="pwrd" name="password" size="29.5">
+<br>
+<br>
+<input type="submit" value="Log in" onclick="func()">
+</form>
+<p align="center"><a href="signup.html">Dont have an account<p>
+</body>
+</html>

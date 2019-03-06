@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>SignUp/MediCare.com</title>
+<link rel="shortcut icon" href="1.ico">
+<style>
+table
+{
+border-collapse:collapse;
+}
+body  {
+    
+}
+</style>
+<script>
+function func(){
+var count=0;
+var a=document.getElementById("no").value;
+if (document.getElementById("check").checked == true && document.getElementById("n").value != "" && document.getElementById("e").value != "" && document.getElementById("p").value != "" && document.getElementById("no").value != "" && document.getElementById("add").value != "" && document.getElementById("da").value != "") 
+{
+while (a!=0)
+{
+ a=parseInt(a/10);
+ count=count+1;
+}
+if (count==10){
+window.open("project.html","_blank");}
+else{alert("check your no");}
+}
+else{
+alert("check for your inputs/agree to our terms and conditions");
+}
+}
+</script>
+</head>
+<body background="C:\Users\get it\Desktop\eww\New folder\j.jpg">
+<br>
+<br>
+<table border=5 align="center" width="500" height="500">
+<tr>
+<th style="font-size:30;">Personal details</th>
+</tr>
+<tr>
+<td style="font-size:20;">Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="n" name="name" size="39" ></td>
+</tr>
+<tr>
+<td style="font-size:20;">Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email" id="e" name="email" size="39"></td>
+</tr>
+<tr>
+<td style="font-size:20;">Password:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="password" id="p" name="password" size="39"></td>
+</tr>
+<tr>
+<td style="font-size:20;">Mobile Number:<input type="text" id="no" name="num" maxlength=10 size="39"></td>
+</tr>
+<tr>
+<td style="font-size:20;">Address:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<textarea id="add" type="text" rows="5" cols="41"></textarea></td>
+</tr>
+<tr>
+<td style="font-size:20;">Date of Birth:&nbsp&nbsp&nbsp&nbsp<input type="date" id="da" name="dob" size="50"></td>
+</tr>
+<tr>
+<td style="font-size:20;"><input type="checkbox" name="tac" id="check" checked>Agree to our terms and conditions?</td>
+</tr>
+<tr>
+<td align="center"><input type="submit" value="Sign up" style="height:2.5em;width:7em;" onclick="func()"></td>
+</tr>
+</table>
+<p style="font-size:20;" align="center"><a href="pro.html">Already have an account</a></p>
+</body>
+</html>
